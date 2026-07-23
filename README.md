@@ -1,6 +1,10 @@
 # python website thing
 
-run `npx http-server` or otherwise start a http server serving index.html.
+## Quick start
+run:
+`git clone --recursive https://github.com/harrisabdullah/python-website`
+`cd python-website`
+`docker compose up`
 
 ## TODO
 - [ ] properly integrate micropython as a dependancy.
