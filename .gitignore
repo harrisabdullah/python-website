@@ -1,8 +1,1 @@
-/micropython/**
 .DS_Store
-
-!/micropython/ports/
-!/micropython/ports/webassembly/
-!/micropython/ports/webassembly/build-standard/
-!/micropython/ports/webassembly/build-standard/micropython.mjs
-!/micropython/ports/webassembly/build-standard/micropython.wasm
