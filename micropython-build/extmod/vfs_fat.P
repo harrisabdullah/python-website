@@ -1,0 +1,24 @@
+build-standard/extmod/vfs_fat.o: ../../extmod/vfs_fat.c \
+  ../../py/mpconfig.h /emsdk/upstream/lib/clang/23/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /emsdk/upstream/lib/clang/23/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  mpconfigport.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  variants/standard/mpconfigvariant.h
+../../extmod/vfs_fat.c :
+  ../../py/mpconfig.h /emsdk/upstream/lib/clang/23/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /emsdk/upstream/lib/clang/23/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  mpconfigport.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h :
+  variants/standard/mpconfigvariant.h :

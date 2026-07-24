@@ -1,0 +1,102 @@
+build-standard/extmod/vfs_posix.o: ../../extmod/vfs_posix.c \
+  ../../py/runtime.h ../../py/mpstate.h \
+  /emsdk/upstream/lib/clang/23/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/mpconfig.h /emsdk/upstream/lib/clang/23/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  mpconfigport.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  variants/standard/mpconfigvariant.h ../../py/mpthread.h \
+  ../../py/misc.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /emsdk/upstream/lib/clang/23/include/stdbool.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /emsdk/upstream/lib/clang/23/include/stddef.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h \
+  ../../py/nlr.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h \
+  ../../py/obj.h ../../py/qstr.h \
+  build-standard/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+  ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h \
+  ../../py/objtuple.h build-standard/genhdr/root_pointers.h \
+  ../../py/pystack.h ../../py/cstack.h ../../py/mperrno.h \
+  ../../py/mphal.h mphalport.h ../../shared/runtime/interrupt_char.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/errno.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  ../../extmod/virtpin.h ../../extmod/vfs.h ../../py/builtin.h \
+  ../../extmod/vfs_posix.h ../../py/lexer.h ../../py/reader.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/sys/stat.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/sys/stat.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stat.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/unistd.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/posix.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/dirent.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/dirent.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/sys/statvfs.h
+../../extmod/vfs_posix.c :
+  ../../py/runtime.h ../../py/mpstate.h :
+  /emsdk/upstream/lib/clang/23/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/mpconfig.h /emsdk/upstream/lib/clang/23/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  mpconfigport.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h :
+  variants/standard/mpconfigvariant.h ../../py/mpthread.h :
+  ../../py/misc.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h :
+  /emsdk/upstream/lib/clang/23/include/stdbool.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h :
+  /emsdk/upstream/lib/clang/23/include/stddef.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h :
+  ../../py/nlr.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h :
+  ../../py/obj.h ../../py/qstr.h :
+  build-standard/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+  ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h :
+  ../../py/objtuple.h build-standard/genhdr/root_pointers.h :
+  ../../py/pystack.h ../../py/cstack.h ../../py/mperrno.h :
+  ../../py/mphal.h mphalport.h ../../shared/runtime/interrupt_char.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/errno.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/errno.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h :
+  ../../extmod/virtpin.h ../../extmod/vfs.h ../../py/builtin.h :
+  ../../extmod/vfs_posix.h ../../py/lexer.h ../../py/reader.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdio.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/sys/stat.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/sys/stat.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stat.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/unistd.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/posix.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/dirent.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/dirent.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/sys/statvfs.h :

@@ -1,0 +1,76 @@
+build-standard/py/pystack.o: ../../py/pystack.c \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdio.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h \
+  /emsdk/upstream/lib/clang/23/include/stddef.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h \
+  /emsdk/upstream/lib/clang/23/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  ../../py/runtime.h ../../py/mpstate.h ../../py/mpconfig.h \
+  /emsdk/upstream/lib/clang/23/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  mpconfigport.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  variants/standard/mpconfigvariant.h ../../py/mpthread.h \
+  ../../py/misc.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /emsdk/upstream/lib/clang/23/include/stdbool.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  ../../py/nlr.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/assert.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h \
+  ../../py/obj.h ../../py/qstr.h \
+  build-standard/genhdr/qstrdefs.generated.h ../../py/mpprint.h \
+  ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h \
+  ../../py/objtuple.h build-standard/genhdr/root_pointers.h \
+  ../../py/pystack.h ../../py/cstack.h
+../../py/pystack.c :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdio.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/wasi/api.h :
+  /emsdk/upstream/lib/clang/23/include/stddef.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h :
+  /emsdk/upstream/lib/clang/23/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  ../../py/runtime.h ../../py/mpstate.h ../../py/mpconfig.h :
+  /emsdk/upstream/lib/clang/23/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h :
+  mpconfigport.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h :
+  variants/standard/mpconfigvariant.h ../../py/mpthread.h :
+  ../../py/misc.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h :
+  /emsdk/upstream/lib/clang/23/include/stdbool.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h :
+  ../../py/nlr.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/assert.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/setjmp.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/setjmp.h :
+  ../../py/obj.h ../../py/qstr.h :
+  build-standard/genhdr/qstrdefs.generated.h ../../py/mpprint.h :
+  ../../py/runtime0.h ../../py/objlist.h ../../py/objexcept.h :
+  ../../py/objtuple.h build-standard/genhdr/root_pointers.h :
+  ../../py/pystack.h ../../py/cstack.h :

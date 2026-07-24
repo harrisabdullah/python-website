@@ -1,0 +1,52 @@
+build-standard/py/unicode.o: ../../py/unicode.c \
+  /emsdk/upstream/lib/clang/23/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h \
+  ../../py/unicode.h ../../py/mpconfig.h \
+  /emsdk/upstream/lib/clang/23/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h \
+  mpconfigport.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h \
+  variants/standard/mpconfigvariant.h ../../py/misc.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h \
+  /emsdk/upstream/lib/clang/23/include/stdbool.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h \
+  /emsdk/upstream/lib/clang/23/include/stddef.h \
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h \
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h
+../../py/unicode.c :
+  /emsdk/upstream/lib/clang/23/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdint.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/alltypes.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/bits/stdint.h :
+  ../../py/unicode.h ../../py/mpconfig.h :
+  /emsdk/upstream/lib/clang/23/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/limits.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/features.h :
+  mpconfigport.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/stdlib.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdlib.h :
+  variants/standard/mpconfigvariant.h ../../py/misc.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/compat/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/string.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/strings.h :
+  /emsdk/upstream/lib/clang/23/include/stdbool.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stdbool.h :
+  /emsdk/upstream/lib/clang/23/include/stddef.h :
+  /emsdk/upstream/emscripten/cache/sysroot/include/stddef.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_header_macro.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_ptrdiff_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_size_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_wchar_t.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_null.h :
+  /emsdk/upstream/lib/clang/23/include/__stddef_offsetof.h :
