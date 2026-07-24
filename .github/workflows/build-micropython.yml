@@ -1,15 +1,19 @@
+name: Build MicroPython WebAssembly
+
 on:
   push:
-    paths:
-      - 'micropython'
-  pull_request:
+    branches: [main]
     paths:
       - 'micropython'
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     container:
       image: emscripten/emsdk:5.0.4
 
@@ -19,15 +23,54 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install Node.js and http-server
+        shell: bash
+        run: |
+          apt-get update
+          apt-get install -y curl
+          curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+          apt-get install -y nodejs
+          npm install -g http-server
+          rm -rf /var/lib/apt/lists/*
+
       - name: Build MicroPython WebAssembly port
+        shell: bash
         run: |
           source /emsdk/emsdk_env.sh
           cd micropython/ports/webassembly
           make
 
-      - name: Upload build output
-        uses: actions/upload-artifact@v4
-        with:
-          name: micropython-wasm-build
-          path: micropython/ports/webassembly/build*
-          if-no-files-found: warn
+      # The build lands in micropython/ports/webassembly/build-standard/,
+      # which is INSIDE the submodule — the outer repo has no way to track
+      # files there (it only tracks the submodule's pinned commit as a
+      # whole). Copy everything out to a top-level path the outer repo owns.
+      # `rm -rf` first + `cp -r src/. dest/` keeps micropython-build/ in
+      # sync even if MicroPython adds/removes/renames output files later.
+      - name: Copy build output out of the submodule
+        shell: bash
+        run: |
+          SRC="micropython/ports/webassembly/build-standard"
+          if [ ! -d "$SRC" ]; then
+            echo "::error::Expected build output at $SRC but it doesn't exist. MicroPython may have renamed its build directory — check the 'make' step's log above for where files actually landed."
+            exit 1
+          fi
+          rm -rf micropython-build
+          mkdir -p micropython-build
+          cp -r "$SRC/." micropython-build/
+
+      - name: Commit and push build output
+        shell: bash
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add micropython-build
+          if git diff --cached --quiet; then
+            echo "Build output unchanged, nothing to commit."
+            exit 0
+          fi
+
+          SUBMODULE_SHA=$(git -C micropython rev-parse --short HEAD)
+          git commit -m "chore: rebuild micropython wasm (submodule @ ${SUBMODULE_SHA}) [skip ci]"
+          git push
