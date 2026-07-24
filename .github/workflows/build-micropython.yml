@@ -1,0 +1,33 @@
+on:
+  push:
+    paths:
+      - 'micropython'
+  pull_request:
+    paths:
+      - 'micropython'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: emscripten/emsdk:5.0.4
+
+    steps:
+      - name: Checkout repository (with submodules)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Build MicroPython WebAssembly port
+        run: |
+          source /emsdk/emsdk_env.sh
+          cd micropython/ports/webassembly
+          make
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: micropython-wasm-build
+          path: micropython/ports/webassembly/build*
+          if-no-files-found: warn
